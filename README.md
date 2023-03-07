@@ -1,0 +1,1 @@
+Official TFT Firmware for Artillery Genius Pro with configuration and icon mods for STM32 & GD32
