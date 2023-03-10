@@ -152,7 +152,8 @@ It will auto heat up if the current temp doesn't reach the target.
 >moreitem_button4_cmd:G28;G29;
 >moreitem_button5_cmd:M500;
 >moreitem_button6_cmd:M150 R255 U255 B255;
->moreitem_button7_cmd:M150 R0 U0 B0;
+#Autotuning for nozzle (E0 = 235°C) and bed (E-1 = 80°C) with saving to EEPROM
+>moreitem_button7_cmd:M150 R255 U0 B0;M106 S127;M303 E0 S235 C8 U1;M107;M500;M150 R0 U0 B255;M106 S127;M303 E-1 S80 C8 U1;M107;M500;M150 R0 U255 B0;
 
 #how many "More" button display on screen interface
 >morefunc_cnt:5
